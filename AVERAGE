@@ -4,8 +4,7 @@ intervalSplit <- split(myfile$steps, myfile$interval)
 
 averageStepsPerInterval <- sapply(intervalSplit, mean, na.rm=TRUE) 
 
-plot(intervalunq, averageStepsPerInterval, type="l", main="Average number of steps per interval across all days",xlab="Interval", ylab="Average # of steps across all days", 
-  lwd=2, col="blue")
+plot(intervalunq, averageStepsPerInterval, type="l", main="Average Steps per Inteverals",xlab="Interval", ylab="steps",lwd=2, col="black")
 
 maxIntervalDays <- max(averageStepsPerInterval, na.rm=TRUE)
 maxIndex <- as.numeric(which(averageStepsPerInterval == maxIntervalDays))
