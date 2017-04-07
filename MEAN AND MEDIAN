@@ -1,0 +1,7 @@
+meanStepsPerDay <- sapply(stepsSplit, mean, na.rm=TRUE)
+meanDataFrame <- data.frame(date=uniqueDates, meanStepsPerDay=meanStepsPerDay, row.names=NULL)
+meanDataFrame
+
+medianStepsPerDay <- sapply(stepsSplit, median, na.rm=TRUE)
+medianDataFrame <- data.frame(date=uniqueDates, medianStepsPerDay=medianStepsPerDay, row.names=NULL)
+medianDataFrame
