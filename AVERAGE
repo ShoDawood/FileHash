@@ -11,3 +11,4 @@ maxIndex <- as.numeric(which(averageStepsPerInterval == maxIntervalDays))
 
 maxInterval <- uniqueIntervals[maxIndex]
 abline(v=maxInterval, col="red", lwd=3)
+maxInterval
