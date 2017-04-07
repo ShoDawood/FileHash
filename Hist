@@ -1,0 +1,3 @@
+ stepsSplit <- split(myfile$steps, dates$yday)
+ totalStepsPerDay <- sapply(stepsSplit, sum, na.rm=TRUE)
+ totalStepsPerDay
