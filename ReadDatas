@@ -1,0 +1,8 @@
+#to load dataset 
+myfile=read.csv("D:/Courses Online/DataScience/activity.csv")
+print(myfile)
+ 
+ #to read a dataset
+dates <- strptime(myfile$date , "%Y-%m_#d")
+dataunq <- unique(myfile$date)
+intervalunq <- unique(myfile$interval)
