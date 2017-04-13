@@ -1,7 +1,0 @@
-fullstepsperday<- aggregate(complete$steps, list(complete$date), FUN=sum)
-hist(fullstepsperday$x, xlab = "Steps Per Day", main = "Histogram of Frequency of Steps per Day")
-
-meanStepsPerDayNew <- sapply(stepsSplitNew, mean)
-meanDataFrameNew <- data.frame(date=dataunq, meanStepsPerDay=meanStepsPerDay, 
-meanStepsPerDayNew=meanStepsPerDayNew, row.names=NULL)
-meanDataFrameNew
