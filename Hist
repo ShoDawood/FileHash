@@ -1,5 +1,0 @@
-days<-myfile$date
-steps<- myfile$steps
-stepsperday<- aggregate(steps, list(days), FUN=sum)
-head(stepsperday)
-hist(stepperday$x , xlab ="step per day" , main = "Histogram of Frequency of Steps per Day" ,col = "pink" , border = "yellow")
