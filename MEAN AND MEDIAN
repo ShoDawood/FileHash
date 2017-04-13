@@ -1,7 +1,0 @@
-meanStepsPerDay <- sapply(stepsSplit, mean, na.rm=TRUE)
-meanDataFrame <- data.frame(date=dataunq, meanStepsPerDay=meanStepsPerDay, row.names=NULL)
-meanDataFrame
-
-medianStepsPerDay <- sapply(stepsSplit, median, na.rm=TRUE)
-medianDataFrame <- data.frame(date=dataunq, medianStepsPerDay=medianStepsPerDay, row.names=NULL)
-medianDataFrame
